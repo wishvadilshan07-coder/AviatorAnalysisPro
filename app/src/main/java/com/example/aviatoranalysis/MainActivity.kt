@@ -1,4 +1,8 @@
+@file:OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
+
 package com.example.aviatoranalysis
+
+
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -14,6 +18,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import java.security.MessageDigest
 import java.util.Locale
+import androidx.compose.foundation.text.SelectionContainer
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
