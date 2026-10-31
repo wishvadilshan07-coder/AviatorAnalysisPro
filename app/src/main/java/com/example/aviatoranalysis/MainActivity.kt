@@ -46,15 +46,27 @@ fun AviatorApp() {
                     else -> HashScreen()
                 }
                 Spacer(Modifier.height(18.dp))
-                Text(
+                                Text(
                     "Important: This app does not predict future crash points. Results are statistical estimates only.",
                     style = MaterialTheme.typography.bodySmall
+                )
+
+                Spacer(Modifier.height(24.dp))
+
+                HorizontalDivider()
+
+                Spacer(Modifier.height(12.dp))
+
+                Text(
+                    "Developed by Wishva Dilshan",
+                    modifier = Modifier.fillMaxWidth(),
+                    textAlign = androidx.compose.ui.text.style.TextAlign.Center,
+                    style = MaterialTheme.typography.bodyMedium
                 )
             }
         }
     }
 }
-
 @Composable
 fun ProbabilityScreen() {
     var multiplier by remember { mutableStateOf("2.0") }
